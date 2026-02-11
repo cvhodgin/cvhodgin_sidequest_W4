@@ -9,8 +9,8 @@ Date: Feb. 10, 2026
 // ------- Tile Legend -------
 // 0 = floor
 // 1 = wall
-// 2 = spikes (respawn)
-// 3 = dash crystal (refills dash)
+// 2 = mountain 
+// 3 = dash crystal 
 // 4 = goal (next level)
 
 const LEVELS = [
@@ -129,7 +129,7 @@ function drawTile(r, c, t) {
     fill(50, 90, 140); // wall
     rect(x, y, tileSize, tileSize);
   } else if (t === 2) {
-    fill(200, 60, 60); // spikes
+    fill(200, 60, 60); // mountain
     rect(x, y, tileSize, tileSize);
     // little triangle-ish look
     fill(255, 150, 150);
